@@ -1,0 +1,169 @@
+POST http://127.0.0.1:5000/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "alex_m@mail.ru",
+    "password": "P@ssw0rdwow"
+}
+
+###
+
+POST http://127.0.0.1:5000/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "alex_m@mail.ru",
+    "password": "P@ssw0rdwow"
+}
+
+###
+
+
+PUT http://127.0.0.1:5000/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "access_token": "JWT_REFRESH_TOKEN",
+  "refresh_token": "JWT_REFRESH_TOKEN"
+}
+
+###
+
+GET http://127.0.0.1:5000/movies/
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/movies/6
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/movies/?status=new&page=1
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/movies/?page=2
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/directors/
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/directors/1
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/directors/?page=1
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/genres/
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/genres/1
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/genres/?page=1
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+POST http://127.0.0.1:5000/movies/
+Accept: application/json
+Content-Type: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+{
+  "title": "Гарри Поттер мой кумир!",
+  "trailer": "Таким фильмам не нужны трейлеры",
+  "year": 1990,
+  "rating": 10,
+  "description": "10 из 10!"
+}
+
+###
+
+PUT http://127.0.0.1:5000/movies/22
+Accept: application/json
+Content-Type: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+{
+  "id": 22,
+  "title": "-------",
+  "trailer": "-----",
+  "year": 0,
+  "rating": 0,
+  "description": "0 из 10!",
+  "genre_id": 1,
+  "director_id": 1
+}
+
+###
+
+DELETE http://127.0.0.1:5000/movies/22
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/users/
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+GET http://127.0.0.1:5000/users/3
+Accept: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+###
+
+PATCH http://127.0.0.1:5000/users/3
+Accept: application/json
+Content-Type: application/json
+Authorization: Here put Token (access_token or refresh_token)
+
+{
+    "email": "sam66_ortega@mail.ru",
+    "surname": "Ortega",
+    "name": "Samuel"
+}
+
+###
+
+PUT http://127.0.0.1:5000/users/password
+Accept: application/json
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhAbWFpbC5ydSIsImV4cCI6MTY4NTAyMjM5NX0.czsDCcmWDCWkTW89KV-BoHBDSnkKhDH7lOlvI67T1bI
+
+{
+    "email": "sam66_ortega@mail.ru",
+    "old_password": "luck1",
+    "new_password": "luck2"
+}
+
+###
