@@ -1,8 +1,8 @@
-## Курсовая работа №4. Разработка API на Flask. 
+## Movie search API (the API allows you to register, log into your account, retrieve movies, directors and genres)
 
-Студент: Михайлов Александр
+Project developed by: Mikhailov Alexander
 
-## Структура приложения:
+## Application structure:
 
 **app.py** - *основное приложением*
 
