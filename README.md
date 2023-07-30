@@ -4,54 +4,54 @@ Project developed by: Mikhailov Alexander
 
 ## Application structure:
 
-**app.py** - *основное приложением*
+**app.py** - *main application*
 
-**setup_db.py** - *объект SQLAlchemy, который используется в приложении*
+**setup_db.py** - *SQLAlchemy object that is used in the application*
 
-**config.py** - *настройки конфигурации приложения*
+**config.py** - *application configuration settings*
 
-**constants.py** - *константы приложения*
+**constants.py** - *application constants*
 
-**decorators.py** - *декораторы доступа приложения*
+**decorators.py** - *application access decorators*
 
-**implemented.py** - *файл для создания DAO и сервисов, чтобы импортировать их везде*
+**implemented.py** - *file to create DAO and services to import them everywhere*
 
-**movies.db** - *база данных с таблицами (фильмы, режиссёры, жанры и пользователи)*
+**movies.db** - *database with tables (movies, directors, genres and users)*
 
-**requirements.txt** - *зависимости приложения*
+**requirements.txt** - *application dependencies*
 
-**.gitignore** - *файлы и папки для игнорирования в системе контроля версий Git*
+**.gitignore** - *files and folders to ignore in the Git version control system*
 
-**test_api.http** - *файл для тестирования http-запросов нашего приложения (API)*
+**test_api.http** - *file for testing http requests of our application (API)*
 
-- **Директория dao** - *Файлы для доступа к данным (DAO)*
-    - **director.py** - *Data Access Object для режиссёра* <br>
-    - **genre.py** - *Data Access Object для жанра* <br>
-    - **movie.py** - *Data Access Object для фильма* <br>
-    - **user.py** - *Data Access Object для пользователя* <br>
-      **Директория model** - **Модели и их схемы**
-        - **director.py** - *Модель и схема для режиссера* <br>
-        - **genre.py** - *Модель и схема для жанра* <br>
-        - **movie.py** - *Модель и схема для фильма* <br>
-        - **user.py** - *Модель и схема для пользователя* <br>
+- **Directory dao** - *Data Access Files (DAO)*
+    - **director.py** - *Data Access Object for director* <br>
+    - **genre.py** - *Data Access Object for genre* <br>
+    - **movie.py** - *Data Access Object for movie* <br>
+    - **user.py** - *Data Access Object for user* <br>
+      **Directory model** - **Models and their schemes**
+        - **director.py** - *Model and scheme for the director* <br>
+        - **genre.py** - *Model and scheme for the genre* <br>
+        - **movie.py** - *Model and scheme for the movie* <br>
+        - **user.py** - *Model and scheme for the user* <br>
 
-- **Директория service** - *Бизнес логика приложения в виде классов*
-    - **director.py** - *Класс DirectorService* <br>
-    - **genre.py** - *Класс GenreService* <br>
-    - **movie.py** - *Класс MovieService* <br>
-    - **user.py** - *Класс UserService* <br>
-    - **auth.py** - *Класс AuthService* <br>
+- **Directory service** - *Business logic of the application in the form of classes*
+    - **director.py** - *Class DirectorService* <br>
+    - **genre.py** - *Class GenreService* <br>
+    - **movie.py** - *Class MovieService* <br>
+    - **user.py** - *Class UserService* <br>
+    - **auth.py** - *Class AuthService* <br>
 
-- **Директория tests** - *Все тесты приложения*
-    - **conftest.py** - *файл с фикстурами для модуля pytest* <br>
-      **Директория test_service** - **тесты для сервисов**
-        - **test_director.py** - *тесты pytest для режиссера* <br>
-        - **test_genre.py** - *тесты pytest для жанра* <br>
-        - **test_movie.py** - *тесты pytest для фильма* <br>
+- **Directory tests** - *All application tests*
+    - **conftest.py** - *fixture file for pytest module* <br>
+      **Directory test_service** - **service tests**
+        - **test_director.py** - *pytest tests for director* <br>
+        - **test_genre.py** - *pytest tests for genre* <br>
+        - **test_movie.py** - *pytest tests for movie* <br>
 
-- **Директория views** - *Все представления (views) приложения*
-    - **directors.py** - *Представления (view) с режиссёрами* <br>
-    - **genres.py** - *Представления (view) с жанрами* <br>
-    - **movies.py** - *Представления (view) с фильмами* <br>
-    - **users.py** - *Представления (view) с пользователями* <br>
-    - **auth.py** - *Представления (view) для аутентификации пользователей* <br>
+- **Directory views** - *All views of the application*
+    - **directors.py** - *Views with directors* <br>
+    - **genres.py** - *Views with genres* <br>
+    - **movies.py** - *Views with movies* <br>
+    - **users.py** - *Views with Users* <br>
+    - **auth.py** - *Views for user authentication* <br>
